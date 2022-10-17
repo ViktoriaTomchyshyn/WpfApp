@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "K9Xg2M+oyBcrMHragvBdzBeV5l8M8IEUF4MsyCBdkE9Y77ISqXrHZRwwhxTfpdRIRRKzFdHWHzsDjZ8ZiSudmg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\vikto\\source\\repos\\kpz2\\kpz2.UI\\kpz2.UI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\vikto\\.nuget\\packages\\automapper\\2.0.0\\automapper.2.0.0.nupkg.sha512",
+    "C:\\Users\\vikto\\.nuget\\packages\\automapperassist\\2.0.0\\automapperassist.2.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoMapper 2.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoMapperAssist 2.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AutoMapperAssist",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+﻿<Window xmlns:Views="clr-namespace:kpz2.UI.Views"  x:Class="kpz2.UI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:kpz2.UI" xmlns:Converter="clr-namespace:kpz2.UI.Convertors"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="600" Width="800">
+
+    <Window.Resources>
+        <Converter:ControlVisibility x:Key="my:ControlVisibility"/>
+    </Window.Resources>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <Button Command ="{Binding SetControlVisibility}" CommandParameter="Orders" Width="100" Height="48" HorizontalAlignment="Right" Margin="20">
+                Orders
+            </Button>
+            <Button Command ="{Binding SetControlVisibility}" CommandParameter="Products"  Width="100" Height="48" HorizontalAlignment="Right" Margin="20">
+                Products
+            </Button>
+        </StackPanel>
+        <StackPanel Grid.Row="1">
+            <Views:OrdersUserControl Visibility="{Binding VisibleControl, Converter={StaticResource my:ControlVisibility}, ConverterParameter=Orders}" />
+            <Views:ProductsUserControl  Visibility="{Binding VisibleControl, Converter={StaticResource my:ControlVisibility}, ConverterParameter=Products}"  />
+        </StackPanel>
+
+    </Grid>
+</Window>

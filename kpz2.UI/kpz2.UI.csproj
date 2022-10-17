@@ -1,0 +1,48 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\Buttons\Orders.png" />
+    <None Remove="Images\Buttons\Products.png" />
+    <None Remove="Images\OrderStatus\status_Delivered.png" />
+    <None Remove="Images\OrderStatus\status_InDelivery.png" />
+    <None Remove="Images\OrderStatus\status_InProgress.png" />
+    <None Remove="Images\OrderStatus\status_New.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapperAssist" Version="2.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\kpz2\kpz2.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\Buttons\Orders.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\Buttons\Products.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="Images\OrderStatus\status_Delivered.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\OrderStatus\status_InDelivery.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\OrderStatus\status_InProgress.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\OrderStatus\status_New.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

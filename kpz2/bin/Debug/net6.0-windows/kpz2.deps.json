@@ -1,0 +1,59 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "kpz2/1.0.0": {
+        "dependencies": {
+          "AutoMapperAssist": "2.0.0"
+        },
+        "runtime": {
+          "kpz2.dll": {}
+        }
+      },
+      "AutoMapper/2.0.0": {
+        "runtime": {
+          "lib/net40-client/AutoMapper.dll": {
+            "assemblyVersion": "2.0.0.232",
+            "fileVersion": "2.0.0.232"
+          }
+        }
+      },
+      "AutoMapperAssist/2.0.0": {
+        "dependencies": {
+          "AutoMapper": "2.0.0"
+        },
+        "runtime": {
+          "lib/AutoMapperAssist.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "kpz2/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "AutoMapper/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-urB4rg/i77hRUerGbrRDQ7ekjCMgPQIR+to7GM1Fzv6ATTH0pviECdc+TW5dAnF30Uk7hx/XK8gJdfNP0hPCFA==",
+      "path": "automapper/2.0.0",
+      "hashPath": "automapper.2.0.0.nupkg.sha512"
+    },
+    "AutoMapperAssist/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YT3wJZMatgx+FUyOVa2O0GSfTyMgzkiUqxTVhutIHe+Zdx968Dkg9OTfqlfnQLDiTW8uqRZyGEDdGaRUqKKKcA==",
+      "path": "automapperassist/2.0.0",
+      "hashPath": "automapperassist.2.0.0.nupkg.sha512"
+    }
+  }
+}

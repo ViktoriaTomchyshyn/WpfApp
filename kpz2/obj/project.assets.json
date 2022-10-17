@@ -1,0 +1,161 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0-windows7.0": {
+      "AutoMapper/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40-client/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net40-client/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AutoMapperAssist/2.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "2.0.0"
+        },
+        "compile": {
+          "lib/AutoMapperAssist.dll": {}
+        },
+        "runtime": {
+          "lib/AutoMapperAssist.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "AutoMapper/2.0.0": {
+      "sha512": "urB4rg/i77hRUerGbrRDQ7ekjCMgPQIR+to7GM1Fzv6ATTH0pviECdc+TW5dAnF30Uk7hx/XK8gJdfNP0hPCFA==",
+      "type": "package",
+      "path": "automapper/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.2.0.0.nupkg.sha512",
+        "automapper.nuspec",
+        "lib/net40-client/AutoMapper.dll",
+        "lib/net40-client/AutoMapper.xml",
+        "lib/sl4/AutoMapper.XML",
+        "lib/sl4/AutoMapper.dll"
+      ]
+    },
+    "AutoMapperAssist/2.0.0": {
+      "sha512": "YT3wJZMatgx+FUyOVa2O0GSfTyMgzkiUqxTVhutIHe+Zdx968Dkg9OTfqlfnQLDiTW8uqRZyGEDdGaRUqKKKcA==",
+      "type": "package",
+      "path": "automapperassist/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapperassist.2.0.0.nupkg.sha512",
+        "automapperassist.nuspec",
+        "lib/AutoMapperAssist.dll"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0-windows7.0": [
+      "AutoMapperAssist >= 2.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\vikto\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\vikto\\source\\repos\\kpz2\\kpz2\\kpz2.csproj",
+      "projectName": "kpz2",
+      "projectPath": "C:\\Users\\vikto\\source\\repos\\kpz2\\kpz2\\kpz2.csproj",
+      "packagesPath": "C:\\Users\\vikto\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\vikto\\source\\repos\\kpz2\\kpz2\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\vikto\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0-windows"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0-windows7.0": {
+        "targetAlias": "net6.0-windows",
+        "dependencies": {
+          "AutoMapperAssist": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          },
+          "Microsoft.WindowsDesktop.App.WPF": {
+            "privateAssets": "none"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoMapper 2.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AutoMapper",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'AutoMapperAssist 2.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "AutoMapperAssist",
+      "targetGraphs": [
+        "net6.0-windows7.0"
+      ]
+    }
+  ]
+}
